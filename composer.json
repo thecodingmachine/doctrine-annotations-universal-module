@@ -1,0 +1,31 @@
+{
+  "name": "thecodingmachine/doctrine-annotations-universal-module",
+  "description": "Cross-framework module for doctrine/annotations",
+  "license": "MIT",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "TheCodingMachine\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0",
+    "container-interop/service-provider": "~0.3.0",
+    "thecodingmachine/common-factories": "dev-master",
+    "doctrine/annotations": "^1.2"
+  },
+  "require-dev": {
+    "puli/cli":"^1.0",
+    "puli/composer-plugin": "^1.0",
+    "mnapoli/simplex": "~0.2.0",
+    "phpunit/phpunit": "^5.0",
+    "satooshi/php-coveralls": "^1.0",
+    "doctrine/cache": "^1.0"
+  },
+  "suggest": {
+    "thecodingmachine/stash-universal-module": "A service provider providing a PSR-6 cache pool through the Stash library",
+    "thecodingmachine/psr-6-doctrine-bridge-universal-module": "A service provider providing a bridge between PSR-6 cache pool and Doctrine cache"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
