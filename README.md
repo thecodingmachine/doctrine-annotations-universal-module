@@ -41,6 +41,8 @@ $annotationReader = $container->get(AnnotationReader::class);
 
 This service provider will lookup for a `Doctrine\Common\Cache\Cache` service. If available, this cache system will be used to cache annotations.
 
+Annotations will be loaded using the autoloader from Composer.
+
 ## Expected values / services
 
 This *service provider* expects the following configuration / services to be available:
