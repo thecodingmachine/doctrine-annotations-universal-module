@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/thecodingmachine/doctrine-annotations-universal-module/badge.svg?branch=1.0&service=github)](https://coveralls.io/github/thecodingmachine/doctrine-annotations-universal-module?branch=1.0)
 
 
-# PSR6 to Doctrine cache universal module
+# Doctrine annotations universal module
 
 This package integrates [doctrine/annotations](https://github.com/doctrine/annotations) (the Doctrine annotation library) in any [container-interop/service-provider](https://github.com/container-interop/service-provider) compatible framework/container.
 
@@ -57,7 +57,7 @@ This *service provider* provides the following services:
 
 | Service name                | Description                          |
 |-----------------------------|--------------------------------------|
-| `Doctrine\Common\Annotations\AnnotationReader` | A Doctrine annotation reader instance.  |
+| `Doctrine\Common\Annotations\Reader` | A Doctrine annotation reader.  |
 
 ## Extended services
 

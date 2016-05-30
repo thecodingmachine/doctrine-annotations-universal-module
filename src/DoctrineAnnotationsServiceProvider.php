@@ -15,8 +15,7 @@ class DoctrineAnnotationsServiceProvider implements ServiceProvider
     public function getServices()
     {
         return [
-            AnnotationReader::class => [self::class,'createAnnotationReader'],
-            Reader::class => new Alias(AnnotationReader::class),
+            Reader::class => [self::class,'createAnnotationReader'],
         ];
     }
 

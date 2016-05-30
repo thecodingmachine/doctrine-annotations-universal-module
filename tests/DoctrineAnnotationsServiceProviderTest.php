@@ -16,11 +16,9 @@ class DoctrineAnnotationsServiceProviderTest extends \PHPUnit_Framework_TestCase
         $simplex = new Container();
         $simplex->register(new DoctrineAnnotationsServiceProvider());
 
-        $reader = $simplex->get(AnnotationReader::class);
+        $reader = $simplex->get(Reader::class);
         $this->assertInstanceOf(Reader::class, $reader);
 
-        $readerAlias = $simplex->get(Reader::class);
-        $this->assertSame($readerAlias, $reader);
     }
 
     public function testCachedReader()
@@ -31,7 +29,7 @@ class DoctrineAnnotationsServiceProviderTest extends \PHPUnit_Framework_TestCase
             return new VoidCache();
         };
 
-        $reader = $simplex->get(AnnotationReader::class);
+        $reader = $simplex->get(Reader::class);
         $this->assertInstanceOf(CachedReader::class, $reader);
 
     }
@@ -45,7 +43,7 @@ class DoctrineAnnotationsServiceProviderTest extends \PHPUnit_Framework_TestCase
         };
         $simplex['thecodingmachine.stash-universal-module.debug'] = false;
 
-        $reader = $simplex->get(AnnotationReader::class);
+        $reader = $simplex->get(Reader::class);
         $this->assertInstanceOf(CachedReader::class, $reader);
     }
 }
