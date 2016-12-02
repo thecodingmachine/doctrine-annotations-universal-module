@@ -2,9 +2,9 @@
     "version": "1.0",
     "name": "thecodingmachine/doctrine-annotations-universal-module",
     "bindings": {
-        "c08a65e9-2ac3-4431-8fc2-901261245004": {
+        "48595f0d-db1a-4008-b4dd-f52fa3cf451a": {
             "_class": "Puli\\Discovery\\Binding\\ClassBinding",
-            "class": "TheCodingMachine\\DoctrineCacheBridgeServiceProvider",
+            "class": "TheCodingMachine\\DoctrineAnnotationsServiceProvider",
             "type": "container-interop/service-provider"
         }
     },
@@ -73,8 +73,18 @@
             "installer": "composer",
             "env": "dev"
         },
+        "phpdocumentor/reflection-common": {
+            "install-path": "vendor/phpdocumentor/reflection-common",
+            "installer": "composer",
+            "env": "dev"
+        },
         "phpdocumentor/reflection-docblock": {
             "install-path": "vendor/phpdocumentor/reflection-docblock",
+            "installer": "composer",
+            "env": "dev"
+        },
+        "phpdocumentor/type-resolver": {
+            "install-path": "vendor/phpdocumentor/type-resolver",
             "installer": "composer",
             "env": "dev"
         },
@@ -228,6 +238,11 @@
             "installer": "composer",
             "env": "dev"
         },
+        "symfony/debug": {
+            "install-path": "vendor/symfony/debug",
+            "installer": "composer",
+            "env": "dev"
+        },
         "symfony/event-dispatcher": {
             "install-path": "vendor/symfony/event-dispatcher",
             "installer": "composer",
@@ -257,10 +272,6 @@
             "install-path": "vendor/symfony/yaml",
             "installer": "composer",
             "env": "dev"
-        },
-        "thecodingmachine/common-factories": {
-            "install-path": "vendor/thecodingmachine/common-factories",
-            "installer": "composer"
         },
         "webmozart/assert": {
             "install-path": "vendor/webmozart/assert",
