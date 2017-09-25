@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/thecodingmachine/doctrine-annotations-universal-module.svg?branch=1.0)](https://travis-ci.org/thecodingmachine/doctrine-annotations-universal-module)
-[![Coverage Status](https://coveralls.io/repos/thecodingmachine/doctrine-annotations-universal-module/badge.svg?branch=1.0&service=github)](https://coveralls.io/github/thecodingmachine/doctrine-annotations-universal-module?branch=1.0)
+[![Build Status](https://travis-ci.org/thecodingmachine/doctrine-annotations-universal-module.svg?branch=1.1)](https://travis-ci.org/thecodingmachine/doctrine-annotations-universal-module)
+[![Coverage Status](https://coveralls.io/repos/thecodingmachine/doctrine-annotations-universal-module/badge.svg?branch=1.1&service=github)](https://coveralls.io/github/thecodingmachine/doctrine-annotations-universal-module?branch=1.1)
 
 
 # Doctrine annotations universal module
@@ -14,7 +14,7 @@ composer require thecodingmachine/doctrine-annotations-universal-module
 
 Once installed, you need to register the [`TheCodingMachine\DoctrineAnnotationsServiceProvider`](src/DoctrineAnnotationsServiceProvider.php) into your container.
 
-If your container supports Puli integration, you have nothing to do. Otherwise, refer to your framework or container's documentation to learn how to register *service providers*.
+If your container supports thecodingmachine/discovery integration, you have nothing to do. Otherwise, refer to your framework or container's documentation to learn how to register *service providers*.
 
 ## Introduction
 

@@ -10,13 +10,11 @@
   },
   "require": {
     "php": ">=7.0",
-    "container-interop/service-provider": "~0.3.0",
+    "container-interop/service-provider": "^0.4",
     "doctrine/annotations": "^1.2"
   },
   "require-dev": {
-    "puli/cli":"^1.0",
-    "puli/composer-plugin": "^1.0",
-    "mnapoli/simplex": "~0.2.0",
+    "mnapoli/simplex": "~0.3.0",
     "phpunit/phpunit": "^5.0",
     "satooshi/php-coveralls": "^1.0",
     "doctrine/cache": "^1.0"

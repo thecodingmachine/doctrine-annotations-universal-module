@@ -7,12 +7,11 @@ use Doctrine\Common\Annotations\AnnotationRegistry;
 use Doctrine\Common\Annotations\CachedReader;
 use Doctrine\Common\Annotations\Reader;
 use Interop\Container\ContainerInterface;
-use Interop\Container\Factories\Alias;
-use Interop\Container\ServiceProvider;
+use Interop\Container\ServiceProviderInterface;
 
-class DoctrineAnnotationsServiceProvider implements ServiceProvider
+class DoctrineAnnotationsServiceProvider implements ServiceProviderInterface
 {
-    public function getServices()
+    public function getFactories()
     {
         return [
             Reader::class => [self::class,'createAnnotationReader'],
@@ -52,5 +51,10 @@ class DoctrineAnnotationsServiceProvider implements ServiceProvider
         } else {
             throw new DoctrineAnnotationsServiceProviderException('Could not find Composer autoload file');
         }
+    }
+
+    public function getExtensions()
+    {
+        return [];
     }
 }
