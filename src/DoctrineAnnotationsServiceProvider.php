@@ -6,7 +6,7 @@ use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Doctrine\Common\Annotations\CachedReader;
 use Doctrine\Common\Annotations\Reader;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use Interop\Container\ServiceProviderInterface;
 
 class DoctrineAnnotationsServiceProvider implements ServiceProviderInterface
